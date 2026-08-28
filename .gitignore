@@ -1,0 +1,44 @@
+# --- KiCad ---
+# Temporary / backup files
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_sch-bak[0-9]*
+*-backups/
+_autosave-*
+*~
+*.tmp
+*.000
+
+# Auto-saved and lock files
+\#auto_saved_files\#
+*.lck
+~*.lck
+
+# Per-user local project state (machine-specific)
+*.kicad_prl
+
+# Caches
+fp-info-cache
+*.dcm.bak
+
+# Netlist / autorouter exchange files
+*.net
+*.dsn
+*.ses
+
+# Simulation output
+*.raw
+*.sim
+
+# --- Fabrication / generated outputs ---
+# Regenerated from source via kicad-cli; keep source, not artifacts.
+/gerbers/
+/production/
+*.zip
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
