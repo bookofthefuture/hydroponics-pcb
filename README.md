@@ -7,8 +7,8 @@ IKEA growing rack.
 
 | Board | Status | MCU | Purpose |
 |-------|--------|-----|---------|
-| `tray-board` | in design (KiCad, added here) | ESP32-WROOM-32E | Per-tray sensor + display node. One per tray (top / bottom). |
-| `reservoir-board` | not started | ESP32-WROOM-32E | Reservoir-side control: fill pumps, A/B + pH dosing pumps, level/EC/pH/temp sensing. |
+| `tray-board` | schematic + layout drawn, ERC/DRC clean | socketed ESP32 30-pin DevKit | Per-tray sensor + display node. One per tray (top / bottom). |
+| `reservoir-board` | not started | ESP32 (TBD) | Reservoir-side control: fill pumps, A/B + pH dosing pumps, level/EC/pH/temp sensing. |
 
 Grow-lamp switching currently stays on the original ESP8266 `hydroponics_monitor`
 node and is out of scope for these boards (may move to the reservoir board later).
@@ -24,7 +24,16 @@ node and is out of scope for these boards (may move to the reservoir board later
 | User input | Rotary encoder + push switch | GPIO / quadrature | 3.3 V |
 | Display | 2.4" ST7789 240×320, no touch | SPI | LVGL, encoder-driven UI |
 
-No high-power switching on the tray board.
+No high-power switching on the tray board. An SP3485EN RS-485 transceiver
+(120 Ω termination, direction pin on GPIO12) links the two tray boards to the
+reservoir board.
+
+## Comms
+
+All three ESPs talk to Home Assistant over WiFi (ESPHome native API). The tray
+boards *also* talk to the reservoir board over RS-485 — a local wired link so
+fill-level reads and pump control don't depend on WiFi/HA. The reservoir is the
+controlling node.
 
 ## Firmware
 
@@ -42,5 +51,12 @@ docs/              pin maps, block diagrams, datasheets
 
 ## Working with KiCad from the CLI
 
-`kicad-cli` is used for DRC/ERC checks and generating fabrication outputs.
-Generated gerbers / production files are git-ignored and regenerated from source.
+Requires KiCad 10.x (`kicad-cli`) plus the standard symbol/footprint libraries.
+
+```
+tools/fab.sh tray-board
+```
+
+runs ERC + DRC (fails on any error/warning) and writes trimmed gerbers, Excellon
+drill + map, SMD-only pick-and-place, BOM, and a gerber zip to
+`tray-board/production/` (git-ignored — regenerated from source).
