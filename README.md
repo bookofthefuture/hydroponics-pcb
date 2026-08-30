@@ -7,7 +7,7 @@ IKEA growing rack.
 
 | Board | Status | MCU | Purpose |
 |-------|--------|-----|---------|
-| `tray-board` | schematic + layout drawn, ERC/DRC clean | socketed ESP32 30-pin DevKit | Per-tray sensor + display node. One per tray (top / bottom). |
+| `tray-board` | schematic updated for touch+SD display (ERC clean), PCB layout needs re-sync (`Update PCB from Schematic`) + routing for the new footprint | socketed ESP32 30-pin DevKit | Per-tray sensor + display node. One per tray (top / bottom). |
 | `reservoir-board` | not started | ESP32 (TBD) | Reservoir-side control: fill pumps, A/B + pH dosing pumps, level/EC/pH/temp sensing. |
 
 Grow-lamp switching currently stays on the original ESP8266 `hydroponics_monitor`
@@ -22,7 +22,15 @@ node and is out of scope for these boards (may move to the reservoir board later
 | Lux level | BH1750 | I²C 3.3 V | Shared SDA/SCL |
 | Water temperature | DS18B20 | 1-Wire 3.3 V | Dedicated GPIO, 4.7 kΩ pull-up |
 | User input | Rotary encoder + push switch | GPIO / quadrature | 3.3 V |
-| Display | 2.4" ST7789 240×320, no touch | SPI | LVGL, encoder-driven UI |
+| Display | 2.4" ILI9341 240×320, resistive touch (XPT2046) + SD card | SPI (shared bus, separate CS lines) | LVGL, encoder-driven UI; SD card wired but not yet used by firmware |
+
+Display connector (J2, 14-pin) pinout: VCC, GND, CS(D5), RESET(D4), DC(D2),
+MOSI(D23), SCK(D18), LED(D15), MISO(D34), T_CLK(D18, shared), T_CS(D14),
+T_DIN(D23, shared), T_DO(D34, shared), T_IRQ(D35). SD card connector (J3,
+4-pin, separate from J2): CS(D19), MOSI(D23, shared), MISO(D34, shared),
+SCK(D18, shared). New GPIOs used: 14, 19, 34, 35 — none of these were
+previously assigned, so add them to the ESPHome configs without touching the
+existing pin numbers.
 
 No high-power switching on the tray board. An SP3485EN RS-485 transceiver
 (120 Ω termination, direction pin on GPIO12) links the two tray boards to the
