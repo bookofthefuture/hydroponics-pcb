@@ -33,19 +33,19 @@ drawing for the LCD Wiki MSP2401/MSP2402 2.4" ILI9341+XPT2046 module.
 Confirmed against the physical board (2026-08-31) — this is the correct
 footprint, not just a probable match.
 
-Trustworthy, dimensioned numbers from this drawing:
+Dimensioned numbers from this drawing, all confirmed against physical
+measurement:
 - PCB outline: 42.72 x 77.18mm
-- Main 14-pin header: 2.54mm pitch, 33.02mm span (13 gaps), 4.85mm from
-  the PCB edge
+- Main 14-pin header (J2): 2.54mm pitch, 33.02mm span (13 gaps), pin 1
+  at X=4.85mm, Y=75.18mm (2.00mm up from the bottom edge) from the
+  top-left PCB corner
+- SD card header (J4): 4 pins, 2.54mm pitch, pin 1 at X=17.23mm,
+  Y=6.51mm from the top-left PCB corner
 - 4 mounting holes: 3.20mm drill / 4.70mm pad, at 36.72mm x 67.26mm
-  hole-to-hole spacing
+  hole-to-hole spacing, inset 3.00mm from each edge
 
-**Not trustworthy from this drawing:** the SD card header position. The
-drawing shows the SD socket and its 4 signal breakouts (SD_SCK,
-SD_MISO, SD_MOSI, SD_CS) as bare labeled pads near the top-right
-mounting hole, not a dimensioned connector — but the physical board
-has an actual pin header there. Before laying out J3 in the redesign,
-measure that header's position directly off the physical board, using
-the top-right mounting hole as the reference point (cross-check the
-board's actual hole spacing against the 36.72mm/67.26mm figures above
-first, to confirm it's the same revision as this drawing).
+All of the above is already built as a footprint:
+`shared-library/Library.pretty/Display_MSP2401_2.4in_Touch.kicad_mod`
+(outline, mounting holes, J2 pins 1-14, J4 pins SD1-SD4) — use it
+directly for correct connector spacing in the redesign rather than
+re-deriving these numbers.
