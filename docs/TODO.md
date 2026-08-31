@@ -25,3 +25,28 @@ Ideas on how:
 - Version the deployment manual alongside the board revision it describes.
 
 Not started — captured 2026-08-28.
+
+## Tray-board display connector footprint (for the redesign)
+
+`docs/datasheets/MSP2401_2.4in_TFT_touch_SD_mechanical.pdf` — mechanical
+drawing for the LCD Wiki MSP2401/MSP2402 2.4" ILI9341+XPT2046 module. Its
+14-pin table matches the tray-board display's pinout exactly (VCC, GND,
+CS, RESET, DC, SDI/MOSI, SCK, LED, SDO/MISO, T_CLK, T_CS, T_DIN, T_DO,
+T_IRQ), so it's very likely the same reference design.
+
+Trustworthy, dimensioned numbers from this drawing:
+- PCB outline: 42.72 x 77.18mm
+- Main 14-pin header: 2.54mm pitch, 33.02mm span (13 gaps), 4.85mm from
+  the PCB edge
+- 4 mounting holes: 3.20mm drill / 4.70mm pad, at 36.72mm x 67.26mm
+  hole-to-hole spacing
+
+**Not trustworthy from this drawing:** the SD card header position. The
+drawing shows the SD socket and its 4 signal breakouts (SD_SCK,
+SD_MISO, SD_MOSI, SD_CS) as bare labeled pads near the top-right
+mounting hole, not a dimensioned connector — but the physical board
+has an actual pin header there. Before laying out J3 in the redesign,
+measure that header's position directly off the physical board, using
+the top-right mounting hole as the reference point (cross-check the
+board's actual hole spacing against the 36.72mm/67.26mm figures above
+first, to confirm it's the same revision as this drawing).
