@@ -29,10 +29,9 @@ Not started — captured 2026-08-28.
 ## Tray-board display connector footprint (for the redesign)
 
 `docs/datasheets/MSP2401_2.4in_TFT_touch_SD_mechanical.pdf` — mechanical
-drawing for the LCD Wiki MSP2401/MSP2402 2.4" ILI9341+XPT2046 module. Its
-14-pin table matches the tray-board display's pinout exactly (VCC, GND,
-CS, RESET, DC, SDI/MOSI, SCK, LED, SDO/MISO, T_CLK, T_CS, T_DIN, T_DO,
-T_IRQ), so it's very likely the same reference design.
+drawing for the LCD Wiki MSP2401/MSP2402 2.4" ILI9341+XPT2046 module.
+Confirmed against the physical board (2026-08-31) — this is the correct
+footprint, not just a probable match.
 
 Trustworthy, dimensioned numbers from this drawing:
 - PCB outline: 42.72 x 77.18mm
