@@ -11,6 +11,13 @@ redirects to an unrelated part instead of 404ing - this is exactly what
 happened with a bogus code that looked plausible but wasn't real) and
 that stockNumber is above a minimum threshold.
 
+Also checks JLCPCB's own Basic/Extended classification for each part
+(rendered as a "Basic"/"Extended" badge on jlcpcb.com/partdetail pages,
+not shown on LCSC's listings at all). Extended parts carry a per-part-
+type handling fee plus usually higher unit cost on top of it - this
+doesn't fail the build, just reports Extended parts at the end so a
+cost pass doesn't require re-auditing the whole BOM by hand again.
+
 Usage:
     tools/check_stock.py <bom.csv> [--min-stock N]
 
@@ -50,6 +57,19 @@ def fetch_stock(code: str):
     return True, stock, actual_code, None
 
 
+def fetch_classification(code: str):
+    """Return 'Basic', 'Extended', or None if it can't be determined."""
+    url = f"https://jlcpcb.com/partdetail/{code}"
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            text = resp.read().decode("utf-8", errors="replace")
+    except (urllib.error.URLError, TimeoutError):
+        return None
+    m = re.search(r'text-\[10px\] text-jlc-primary">([A-Za-z]+)', text)
+    return m.group(1) if m else None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("bom_csv")
@@ -70,6 +90,7 @@ def main():
         sys.exit(0)
 
     problems = []
+    extended = []
     checked = 0
     for row in rows:
         code = row.get(lcsc_col, "").strip()
@@ -81,12 +102,24 @@ def main():
         ok, stock, actual_code, err = fetch_stock(code)
         if not ok:
             problems.append((designator, code, err))
-        elif stock < args.min_stock:
+            continue
+
+        classification = fetch_classification(code)
+        tag = f", {classification}" if classification else ""
+        if stock < args.min_stock:
             problems.append((designator, code, f"stock is {stock} (below minimum {args.min_stock})"))
         else:
-            print(f"[OK] {designator} ({code}): {stock} in stock")
+            print(f"[OK] {designator} ({code}): {stock} in stock{tag}")
+        if classification == "Extended":
+            extended.append((designator, code))
 
     print(f"\ncheck_stock: checked {checked} parts, {len(problems)} problem(s)")
+    if extended:
+        print(f"\n{len(extended)} Extended part(s) (handling fee + usually pricier - "
+              f"worth a Basic-equivalent pass if cost matters):")
+        for designator, code in extended:
+            print(f"  {designator} ({code})")
+
     if problems:
         for designator, code, msg in problems:
             print(f"[PROBLEM] {designator} ({code or 'no code'}): {msg}")
