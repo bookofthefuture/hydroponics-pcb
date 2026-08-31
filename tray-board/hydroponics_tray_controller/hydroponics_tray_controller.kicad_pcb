@@ -5169,7 +5169,7 @@
 				)
 			)
 		)
-		(attr smd)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole roundrect
 			(at -22.1 -24.28)
