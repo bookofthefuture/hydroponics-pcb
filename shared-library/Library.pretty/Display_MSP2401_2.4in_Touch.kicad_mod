@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "2.4in ILI9341+XPT2046 touch TFT module, LCD Wiki MSP2401/MSP2402 reference design - confirmed matching the physical board 2026-08-31. PCB outline, mounting holes and main 14-pin header (J2) are dimensioned from the official mechanical drawing (docs/datasheets/MSP2401_2.4in_TFT_touch_SD_mechanical.pdf). The SD card header position is NOT dimensioned in that drawing and is only roughly marked here - measure it off the physical board before relying on it.")
+	(descr "2.4in ILI9341+XPT2046 touch TFT module, LCD Wiki MSP2401/MSP2402 reference design - confirmed matching the physical board 2026-08-31. PCB outline, mounting holes, main 14-pin header (J2, pins 1-14) and SD card header (J4, pins SD1-SD4) are all dimensioned from the official mechanical drawing (docs/datasheets/MSP2401_2.4in_TFT_touch_SD_mechanical.pdf) and confirmed against physical measurement.")
 	(tags "display TFT ILI9341 touch XPT2046 MSP2401 MSP2402")
 	(property "Reference" "REF**"
 		(at 21.36 -3 0)
@@ -305,17 +305,33 @@
 		(layers "*.Cu" "*.Mask")
 		(uuid "8dab4922-acd5-4605-891f-2dd65bd8ce85")
 	)
-	(fp_text user "SD HDR - POSITION NOT CONFIRMED\nMEASURE PHYSICAL BOARD"
-		(at 30 10 0)
-		(layer "Cmts.User")
-		(uuid "32215dc4-19bd-42ac-8e60-d8bcf50e4498")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
+	(pad "SD1" thru_hole rect
+		(at 17.23 6.51)
+		(size 1.7 1.7)
+		(drill 1.0)
+		(layers "*.Cu" "*.Mask")
+		(uuid "ac907253-9e2a-41b1-82a7-6f86592a7606")
+	)
+	(pad "SD2" thru_hole circle
+		(at 19.77 6.51)
+		(size 1.7 1.7)
+		(drill 1.0)
+		(layers "*.Cu" "*.Mask")
+		(uuid "805de64d-007d-428c-ae74-d2121ed7355e")
+	)
+	(pad "SD3" thru_hole circle
+		(at 22.31 6.51)
+		(size 1.7 1.7)
+		(drill 1.0)
+		(layers "*.Cu" "*.Mask")
+		(uuid "8f2b9412-0898-4baf-8be6-e41a9e16fb52")
+	)
+	(pad "SD4" thru_hole circle
+		(at 24.85 6.51)
+		(size 1.7 1.7)
+		(drill 1.0)
+		(layers "*.Cu" "*.Mask")
+		(uuid "6d807ba0-46cb-4539-b523-4356c762ed01")
 	)
 	(embedded_fonts no)
 )
