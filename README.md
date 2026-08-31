@@ -54,6 +54,11 @@ the schematic here and those configs — keep them in sync.
 ```
 tray-board/        KiCad project for the tray sensor board
 reservoir-board/   (future) KiCad project for the reservoir board
+shared-library/    custom symbol (New_Library) + footprint (Library.pretty)
+                   library, referenced by both boards' sym-lib-table/
+                   fp-lib-table via ${KIPRJMOD}/../../shared-library/ - keep
+                   custom parts (ESP32 DevKit socket, display modules, etc.)
+                   here rather than per-board copies, which drift silently
 docs/              pin maps, block diagrams, datasheets
 ```
 
