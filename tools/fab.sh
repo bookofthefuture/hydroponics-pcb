@@ -47,7 +47,9 @@ kicad-cli pcb export drill --format excellon --drill-origin absolute \
 echo "==> Pick-and-place / CPL (SMD only, DNP excluded)"
 kicad-cli pcb export pos --format csv --units mm --side both \
   --exclude-dnp --smd-only --use-drill-file-origin \
-  --output "$out/${name}-cpl.csv" "$pcb"
+  --output "$out/${name}-cpl-raw.csv" "$pcb"
+python3 "$repo_root/tools/format_cpl.py" "$out/${name}-cpl-raw.csv" "$out/${name}-cpl.csv"
+rm -f "$out/${name}-cpl-raw.csv"
 
 echo "==> BOM (DNP excluded, grouped so differing LCSC codes don't get merged away)"
 kicad-cli sch export bom --group-by 'Value,Footprint,LCSC' --exclude-dnp \
