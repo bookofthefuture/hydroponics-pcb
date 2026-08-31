@@ -16,7 +16,7 @@ board_dir="$repo_root/$board_dir"
 pcb="$(find "$board_dir" -name '*.kicad_pcb' -not -path '*-backups/*' | head -1)"
 sch="${pcb%.kicad_pcb}.kicad_sch"
 name="$(basename "${pcb%.kicad_pcb}")"
-out="$board_dir/production"
+out="$(dirname "$pcb")/production"
 
 [ -f "$pcb" ] || { echo "no .kicad_pcb found under $board_dir" >&2; exit 1; }
 
