@@ -63,8 +63,9 @@ python3 "$repo_root/tools/filter_bom_to_cpl.py" "$out/${name}-bom-full.csv" "$ou
   "$out/${name}-bom.csv" "$out/${name}-hand-solder-bom.csv"
 rm -f "$out/${name}-bom-full.csv"
 
-echo "==> LCSC stock check (catches invalid/delisted codes and zero-stock parts;"
-echo "    can't see JLCPCB's own assembly-line stock pool, which can differ)"
+echo "==> LCSC stock + Basic/Extended check (catches invalid/delisted/zero-stock codes;"
+echo "    flags Extended parts for a cost pass; can't see JLCPCB's own assembly-line"
+echo "    stock pool, which can differ from LCSC's general marketplace number)"
 python3 "$repo_root/tools/check_stock.py" "$out/${name}-bom.csv"
 
 echo "==> Zipping gerbers + drill (JLCPCB layers only — job file/drill map left out)"
