@@ -3329,6 +3329,394 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "New_Library:Display_MSP2401_2.4in_Touch"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J2"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Display_MSP2401_2.4in_Touch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Library:Display_MSP2401_2.4in_Touch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "docs/datasheets/MSP2401_2.4in_TFT_touch_SD_mechanical.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2.4in ILI9341+XPT2046 touch TFT + SD module (LCD Wiki MSP2401/MSP2402): main 14-pin header (pins 1-14) + separate 4-pin SD header (pins SD1-SD4), merged into one symbol so the footprint's fixed connector spacing is always correct"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Display_MSP2401_2.4in_Touch_1_1"
+				(pin passive line
+					(at -5.08 15.24 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 12.7 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 10.16 0)
+					(length 2.54)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 0)
+					(length 2.54)
+					(name "RESET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 2.54)
+					(name "DC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "LED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 2.54)
+					(name "T_CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 2.54)
+					(name "T_CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 2.54)
+					(name "T_DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -15.24 0)
+					(length 2.54)
+					(name "T_DO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -17.78 0)
+					(length 2.54)
+					(name "T_IRQ"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 0 0)
+					(length 2.54)
+					(name "SD_CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SD1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -2.54 0)
+					(length 2.54)
+					(name "SD_MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -5.08 0)
+					(length 2.54)
+					(name "SD_MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SD3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -7.62 0)
+					(length 2.54)
+					(name "SD_SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SD4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "New_Library:ESP32_DevKit_30Pi"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4631,8 +5019,8 @@
 		(uuid "5cedc503-5d58-4597-b8a6-3c6815575e52")
 	)
 	(rectangle
-		(start 114.3 96.52)
-		(end 160.02 149.86)
+		(start 113.03 96.52)
+		(end 158.75 149.86)
 		(stroke
 			(width 0)
 			(type default)
@@ -4710,23 +5098,13 @@
 	)
 	(text "Display Connector"
 		(exclude_from_sim no)
-		(at 124.714 99.06 0)
+		(at 214.63 22.352 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "85fad771-ae4b-40a6-9186-de1f3981dab0")
-	)
-	(text "SD Card Connector"
-		(exclude_from_sim no)
-		(at 213.36 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "98a213cd-a2aa-476f-ab81-ad58c7a1b3f7")
 	)
 	(text "i2c Peripherals"
 		(exclude_from_sim no)
@@ -4910,7 +5288,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 129.54) (xy 133.35 129.54)
+			(xy 207.01 53.34) (xy 220.98 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4970,7 +5348,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 29.21) (xy 226.06 29.21)
+			(xy 254 58.42) (xy 266.7 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4990,7 +5368,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 124.46) (xy 133.35 124.46)
+			(xy 207.01 48.26) (xy 220.98 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5090,7 +5468,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 142.24) (xy 133.35 142.24)
+			(xy 207.01 66.04) (xy 220.98 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5120,7 +5498,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 149.86) (xy 133.35 149.86)
+			(xy 207.01 73.66) (xy 220.98 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5130,7 +5508,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 139.7) (xy 133.35 139.7)
+			(xy 207.01 63.5) (xy 220.98 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5140,7 +5518,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 114.3) (xy 124.46 119.38)
+			(xy 212.09 38.1) (xy 212.09 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5200,7 +5578,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 127) (xy 133.35 127)
+			(xy 207.01 50.8) (xy 220.98 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5210,7 +5588,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 26.67) (xy 226.06 26.67)
+			(xy 254 55.88) (xy 266.7 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5440,7 +5818,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 111.76) (xy 133.35 116.84)
+			(xy 220.98 35.56) (xy 220.98 40.64)
 		)
 		(stroke
 			(width 0)
@@ -5570,7 +5948,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 121.92) (xy 119.38 121.92)
+			(xy 220.98 45.72) (xy 207.01 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5620,7 +5998,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 119.38) (xy 133.35 119.38)
+			(xy 212.09 43.18) (xy 220.98 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5690,7 +6068,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 134.62) (xy 133.35 134.62)
+			(xy 207.01 58.42) (xy 220.98 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5720,7 +6098,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 144.78) (xy 133.35 144.78)
+			(xy 207.01 68.58) (xy 220.98 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5790,7 +6168,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 31.75) (xy 226.06 31.75)
+			(xy 254 60.96) (xy 266.7 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5850,7 +6228,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 34.29) (xy 226.06 34.29)
+			(xy 254 63.5) (xy 266.7 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5980,7 +6358,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 137.16) (xy 133.35 137.16)
+			(xy 207.01 60.96) (xy 220.98 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6000,7 +6378,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 147.32) (xy 133.35 147.32)
+			(xy 207.01 71.12) (xy 220.98 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6020,7 +6398,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 132.08) (xy 119.38 132.08)
+			(xy 220.98 55.88) (xy 207.01 55.88)
 		)
 		(stroke
 			(width 0)
@@ -6060,7 +6438,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 111.76) (xy 133.35 111.76)
+			(xy 217.17 35.56) (xy 220.98 35.56)
 		)
 		(stroke
 			(width 0)
@@ -6119,7 +6497,7 @@
 		(uuid "139248c3-a977-4c2e-9599-7bfc2d33c968")
 	)
 	(label "ESP32_D23"
-		(at 119.38 129.54 0)
+		(at 207.01 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6129,7 +6507,7 @@
 		(uuid "1a569445-db9c-4014-a8b0-cd968cce902f")
 	)
 	(label "ESP32_D15"
-		(at 119.38 134.62 0)
+		(at 207.01 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6189,7 +6567,7 @@
 		(uuid "45c5defe-3f7a-4d6a-a31d-b72ce45003b0")
 	)
 	(label "ESP32_D23"
-		(at 226.06 29.21 0)
+		(at 266.7 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6259,7 +6637,7 @@
 		(uuid "53cc9858-4f2c-4f6a-8ba2-d8e69e8b9120")
 	)
 	(label "ESP32_D35"
-		(at 119.38 149.86 0)
+		(at 207.01 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6279,7 +6657,7 @@
 		(uuid "64133d37-81ff-4cc9-99cf-3a4e127cb7c4")
 	)
 	(label "ESP32_D19"
-		(at 226.06 26.67 0)
+		(at 266.7 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6289,7 +6667,7 @@
 		(uuid "7237f96e-1103-4da6-86a8-344d5bea1992")
 	)
 	(label "ESP32_D5"
-		(at 119.38 121.92 0)
+		(at 207.01 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6309,7 +6687,7 @@
 		(uuid "78a77b00-1b5e-4ff3-9878-f03e330d35d9")
 	)
 	(label "ESP32_D18"
-		(at 226.06 34.29 0)
+		(at 266.7 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6319,7 +6697,7 @@
 		(uuid "7a8bf3ab-bd92-4dc7-9e7e-8f9baa8f16aa")
 	)
 	(label "ESP32_D34"
-		(at 119.38 147.32 0)
+		(at 207.01 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6379,7 +6757,7 @@
 		(uuid "956f12d3-47f9-485f-80a9-883346566de0")
 	)
 	(label "ESP32_D34"
-		(at 119.38 137.16 0)
+		(at 207.01 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6389,7 +6767,7 @@
 		(uuid "9b23ff9f-3bee-4aad-9578-4dee2f2105b7")
 	)
 	(label "ESP32_D23"
-		(at 119.38 144.78 0)
+		(at 207.01 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6409,7 +6787,7 @@
 		(uuid "a46758d9-f17c-483a-a3d3-8414e837ffa3")
 	)
 	(label "ESP32_D18"
-		(at 119.38 132.08 0)
+		(at 207.01 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6449,7 +6827,7 @@
 		(uuid "b09b3b56-975b-497a-9235-84c66a8ece5d")
 	)
 	(label "ESP32_D34"
-		(at 226.06 31.75 0)
+		(at 266.7 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6479,7 +6857,7 @@
 		(uuid "cfa0b3c2-c747-4743-90e1-cdafb4908c6f")
 	)
 	(label "ESP32_D4"
-		(at 119.38 124.46 0)
+		(at 207.01 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6499,7 +6877,7 @@
 		(uuid "da0e5361-470b-4ee3-a7ea-1917b8f3ceab")
 	)
 	(label "ESP32_D2"
-		(at 119.38 127 0)
+		(at 207.01 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6529,7 +6907,7 @@
 		(uuid "e4b28f7f-f3b5-4321-b28e-21d6b0f9950b")
 	)
 	(label "ESP32_D14"
-		(at 119.38 142.24 0)
+		(at 207.01 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6569,7 +6947,7 @@
 		(uuid "fb18df74-59a3-40e1-b526-9dc2d402a864")
 	)
 	(label "ESP32_D18"
-		(at 119.38 139.7 0)
+		(at 207.01 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6690,7 +7068,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 123.19 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -7073,7 +7451,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 129.54 111.76 0)
+		(at 217.17 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7084,7 +7462,7 @@
 		(fields_autoplaced yes)
 		(uuid "4c6639d4-306e-453e-a843-b1e774c32bc4")
 		(property "Reference" "#PWR017"
-			(at 129.54 115.57 0)
+			(at 217.17 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7095,7 +7473,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 129.54 106.68 0)
+			(at 217.17 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7105,7 +7483,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 111.76 0)
+			(at 217.17 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7116,7 +7494,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 111.76 0)
+			(at 217.17 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7127,7 +7505,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 129.54 111.76 0)
+			(at 217.17 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7730,94 +8108,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 218.44 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77211ca0-9850-4a4e-8b06-324e8baee3bf")
-		(property "Reference" "J3"
-			(at 219.71 26.6699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SD_Connector"
-			(at 219.71 29.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 218.44 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 218.44 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a0e4dbca-2985-4d4d-8cd1-eaf8cf5e2cdc")
-		)
-		(pin "2"
-			(uuid "2a46c45e-c47f-4a28-b021-818d5a184eff")
-		)
-		(pin "3"
-			(uuid "5f20ee90-af6c-4790-98e8-b57ab3588f00")
-		)
-		(pin "4"
-			(uuid "89badbba-0d00-467c-83eb-6a20741516b3")
-		)
-		(instances
-			(project "hydroponics_tray_controller"
-				(path "/aea81541-a50a-49d5-8109-ed9a0be756de"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 128.27 41.91 0)
 		(unit 1)
@@ -7896,8 +8186,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x14_Socket")
-		(at 138.43 132.08 0)
+		(lib_id "New_Library:Display_MSP2401_2.4in_Touch")
+		(at 226.06 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7905,10 +8195,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7c7f76f3-6ee7-4823-99fa-e2c5e1a82d8c")
 		(property "Reference" "J2"
-			(at 139.7 132.0799 0)
+			(at 227.33 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7918,8 +8207,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Display_Connector_Touch"
-			(at 139.7 134.6199 0)
+		(property "Value" "Display_MSP2401_2.4in_Touch"
+			(at 205.74 27.432 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7929,8 +8218,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical"
-			(at 138.43 132.08 0)
+		(property "Footprint" "Library:Display_MSP2401_2.4in_Touch"
+			(at 226.06 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7941,7 +8230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 132.08 0)
+			(at 226.06 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7951,8 +8240,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x14, script generated"
-			(at 138.43 132.08 0)
+		(property "Description" "2.4in ILI9341+XPT2046 touch TFT + SD module, main 14-pin + SD 4-pin merged"
+			(at 226.06 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8003,6 +8292,18 @@
 		)
 		(pin "14"
 			(uuid "5a16ad93-eab9-477e-a3f0-c5dbf88be6eb")
+		)
+		(pin "SD1"
+			(uuid "23c4c0ee-d1d5-4d1d-aa92-c1adf9fdf2cb")
+		)
+		(pin "SD2"
+			(uuid "f95a70a2-ce6b-4837-8013-cc321bbf2d0f")
+		)
+		(pin "SD3"
+			(uuid "db7d6627-8512-457e-91c0-98e62277f0c5")
+		)
+		(pin "SD4"
+			(uuid "0d21b14c-fa8d-4707-8732-636088c9c400")
 		)
 		(instances
 			(project "hydroponics_tray_controller"
@@ -8689,7 +8990,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 123.19 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -8811,7 +9112,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 114.3 0)
+		(at 212.09 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8822,7 +9123,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd0fce97-2338-4d23-9509-2b04024969cc")
 		(property "Reference" "#PWR06"
-			(at 124.46 118.11 0)
+			(at 212.09 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8833,7 +9134,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 119.38 0)
+			(at 212.09 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8843,7 +9144,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 114.3 0)
+			(at 212.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8854,7 +9155,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 114.3 0)
+			(at 212.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8865,7 +9166,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 114.3 0)
+			(at 212.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8921,7 +9222,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 123.19 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -9877,7 +10178,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 123.19 189.23 0)
 			(hide yes)
 			(show_name no)

@@ -40,7 +40,8 @@ measurement:
   at X=4.85mm, Y=75.18mm (2.00mm up from the bottom edge) from the
   top-left PCB corner
 - SD card header (J4): 4 pins, 2.54mm pitch, pin 1 at X=17.23mm,
-  Y=6.51mm from the top-left PCB corner
+  Y=3.00mm from the top-left PCB corner (same row as the two top
+  mounting holes)
 - 4 mounting holes: 3.20mm drill / 4.70mm pad, at 36.72mm x 67.26mm
   hole-to-hole spacing, inset 3.00mm from each edge
 
