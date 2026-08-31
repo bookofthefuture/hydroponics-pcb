@@ -711,7 +711,7 @@
         "uuid": "aea81541-a50a-49d5-8109-ed9a0be756de"
       }
     ],
-    "used_designators": "#FLG1-4,R1-16,J1-7,U1-4,C1-9,L1,D1-11,R_PU_TACH_2,#PWR1-41,R_PD_2-8,SW1,H1-4,F1,Q1-8,R_GATE_2-8,CH2-6,CH8,R_TRIG1,TRAY1,POW1",
+    "used_designators": "#FLG1-4,R1-16,J1-7,U1-4,C1-9,D1-11,#PWR1-41,R_PU_TACH_2,L1,R_PD_2-8,SW1,H1-4,F1,Q1-8,R_GATE_2-8,CH2-6,CH8,R_TRIG1,TRAY1,POW1",
     "variants": []
   },
   "sheets": [
