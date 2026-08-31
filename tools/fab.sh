@@ -53,6 +53,7 @@ rm -f "$out/${name}-cpl-raw.csv"
 
 echo "==> BOM (DNP excluded, grouped so differing LCSC codes don't get merged away)"
 kicad-cli sch export bom --group-by 'Value,Footprint,LCSC' --exclude-dnp \
+  --ref-range-delimiter '' \
   --fields 'Reference,Footprint,${QUANTITY},Value,LCSC' \
   --labels 'Designator,Footprint,Quantity,Value,LCSC Part #' \
   --output "$out/${name}-bom.csv" "$sch"
