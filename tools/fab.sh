@@ -56,7 +56,12 @@ kicad-cli sch export bom --group-by 'Value,Footprint,LCSC' --exclude-dnp \
   --ref-range-delimiter '' \
   --fields 'Reference,Footprint,${QUANTITY},Value,LCSC' \
   --labels 'Designator,Footprint,Quantity,Value,LCSC Part #' \
-  --output "$out/${name}-bom.csv" "$sch"
+  --output "$out/${name}-bom-full.csv" "$sch"
+
+echo "==> Restricting BOM to CPL's designators (through-hole parts hand-soldered, not JLC-placed)"
+python3 "$repo_root/tools/filter_bom_to_cpl.py" "$out/${name}-bom-full.csv" "$out/${name}-cpl.csv" \
+  "$out/${name}-bom.csv" "$out/${name}-hand-solder-bom.csv"
+rm -f "$out/${name}-bom-full.csv"
 
 echo "==> Zipping gerbers + drill (JLCPCB layers only — job file/drill map left out)"
 ( cd "$out/gerbers" && python3 -c "
