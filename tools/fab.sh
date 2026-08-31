@@ -24,7 +24,7 @@ rm -rf "$out"
 mkdir -p "$out/gerbers"
 
 echo "==> ERC"
-kicad-cli sch erc --exit-code-violations --severity-error --severity-warning \
+kicad-cli sch erc --exit-code-violations --severity-error \
   "$sch" -o "$out/${name}-erc.rpt"
 
 echo "==> Pin usage / strapping-pin check"
@@ -34,29 +34,35 @@ echo "==> DRC"
 kicad-cli pcb drc --exit-code-violations --severity-error --severity-warning \
   "$pcb" -o "$out/${name}-drc.rpt"
 
-echo "==> Gerbers (fab layers only)"
-kicad-cli pcb export gerbers --no-protel-ext --subtract-soldermask \
+echo "==> Gerbers (fab layers only, Protel extensions for JLCPCB)"
+kicad-cli pcb export gerbers --subtract-soldermask \
   --layers F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts \
   --output "$out/gerbers/" "$pcb"
 
-echo "==> Drill (Excellon, PTH/NPTH merged, drill-origin)"
+echo "==> Drill (Excellon, separate PTH/NPTH, drill-origin)"
 kicad-cli pcb export drill --format excellon --drill-origin absolute \
-  --excellon-units mm --generate-map --map-format gerberx2 \
+  --excellon-units mm --excellon-separate-th --generate-map --map-format gerberx2 \
   --output "$out/gerbers/" "$pcb"
 
-echo "==> Pick-and-place (SMD only, DNP excluded)"
+echo "==> Pick-and-place / CPL (SMD only, DNP excluded)"
 kicad-cli pcb export pos --format csv --units mm --side both \
   --exclude-dnp --smd-only --use-drill-file-origin \
-  --output "$out/${name}-pos.csv" "$pcb"
+  --output "$out/${name}-cpl.csv" "$pcb"
 
-echo "==> BOM"
-kicad-cli sch export bom --group-by Value \
-  --fields 'Reference,Value,Footprint,${QUANTITY},${DNP},MPN' \
-  --labels 'Refs,Value,Footprint,Qty,DNP,MPN' \
+echo "==> BOM (DNP excluded, grouped so differing LCSC codes don't get merged away)"
+kicad-cli sch export bom --group-by 'Value,Footprint,LCSC' --exclude-dnp \
+  --fields 'Reference,Footprint,${QUANTITY},Value,LCSC' \
+  --labels 'Designator,Footprint,Quantity,Value,LCSC Part #' \
   --output "$out/${name}-bom.csv" "$sch"
 
-echo "==> Zipping gerbers + drill"
-( cd "$out/gerbers" && python3 -m zipfile -c "../${name}-gerbers.zip" ./* )
+echo "==> Zipping gerbers + drill (JLCPCB layers only — job file/drill map left out)"
+( cd "$out/gerbers" && python3 -c "
+import zipfile, glob
+files = [f for f in glob.glob('*') if not (f.endswith('.gbrjob') or '_map' in f or f.endswith('-drl_report.txt'))]
+with zipfile.ZipFile('../${name}-gerbers.zip', 'w') as z:
+    for f in sorted(files):
+        z.write(f)
+" )
 
 echo
 echo "Done. Outputs in $out/"

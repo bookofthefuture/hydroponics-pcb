@@ -65,9 +65,14 @@ Requires KiCad 10.x (`kicad-cli`) plus the standard symbol/footprint libraries.
 tools/fab.sh tray-board
 ```
 
-runs ERC + DRC (fails on any error/warning) and writes trimmed gerbers, Excellon
-drill + map, SMD-only pick-and-place, BOM, and a gerber zip to
-`tray-board/production/` (git-ignored — regenerated from source).
+runs ERC + DRC (fails on any error/warning) and writes a JLCPCB-ready set to
+`tray-board/production/` (git-ignored — regenerated from source): gerbers
+(Protel extensions) + separate PTH/NPTH Excellon drill files, zipped as
+`<name>-gerbers.zip`; `<name>-cpl.csv` (SMD-only pick-and-place, DNP parts
+excluded); `<name>-bom.csv` (DNP excluded, `LCSC Part #` column from each
+part's `LCSC` schematic field). Parts you're sourcing/fitting yourself (e.g.
+the socketed ESP32 module) should be marked Do Not Populate in the schematic
+so they're left out of both the BOM and the CPL automatically.
 
 It also runs `tools/check_pins.py`, which checks the MCU's pin usage for
 hardware hazards ERC doesn't catch — currently ESP32 strapping pins (GPIO0,

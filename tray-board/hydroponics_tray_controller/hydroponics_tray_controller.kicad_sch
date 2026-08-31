@@ -10801,7 +10801,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "da0de0e7-56bf-4518-bf6c-72839ef6f369")
 		(property "Reference" "U1"
 			(at 165.354 28.194 0)

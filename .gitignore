@@ -38,6 +38,11 @@ fp-info-cache
 gerbers/
 production/
 *.zip
+*.gbr
+*.gbrjob
+*.drl
+*.ipc
+*-drl_map.*
 
 # --- OS / editor cruft ---
 .DS_Store

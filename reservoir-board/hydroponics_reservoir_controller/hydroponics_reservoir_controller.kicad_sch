@@ -8584,10 +8584,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "06d312df-ad8b-4dd3-99c4-c4e24d412688")
 		(property "Reference" "R10"
-			(at 113.03 88.9 90)
+			(at 113.03 92.202 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8596,8 +8595,9 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 113.03 91.44 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8664,10 +8664,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0891842d-4a6d-4912-aa66-5dd8d44fdb3d")
 		(property "Reference" "R18"
-			(at 113.03 121.92 90)
+			(at 113.03 125.222 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8676,8 +8675,9 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 113.03 124.46 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9217,10 +9217,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "23df7e61-afa6-479b-b7be-34d902ec0292")
 		(property "Reference" "R8"
-			(at 71.12 88.9 90)
+			(at 71.12 92.456 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9229,8 +9228,9 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 71.12 91.44 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9299,7 +9299,7 @@
 		(dnp no)
 		(uuid "24287aa3-1a8e-4cc5-93b2-eb649529daed")
 		(property "Reference" "R11"
-			(at 110.998 98.552 0)
+			(at 111.252 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9311,6 +9311,7 @@
 		)
 		(property "Value" "10k"
 			(at 111.506 101.092 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11085,7 +11086,7 @@
 		(dnp no)
 		(uuid "56bf1446-050d-41f1-9179-801125128b56")
 		(property "Reference" "R19"
-			(at 110.49 131.572 0)
+			(at 111.252 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11097,6 +11098,7 @@
 		)
 		(property "Value" "10k"
 			(at 111.506 134.112 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11419,7 +11421,7 @@
 		(dnp no)
 		(uuid "5af3462d-abf1-406b-89d6-d7d72d6bdfad")
 		(property "Reference" "R7"
-			(at 28.448 98.552 0)
+			(at 28.448 98.806 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11431,6 +11433,7 @@
 		)
 		(property "Value" "10k"
 			(at 27.686 101.092 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11579,10 +11582,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "608e75a0-bb77-458f-be2b-1330112711b3")
 		(property "Reference" "R5"
-			(at 228.6 33.0199 0)
+			(at 228.092 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11592,8 +11594,9 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "120 Ohm"
 			(at 228.6 35.5599 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11745,7 +11748,7 @@
 		(dnp no)
 		(uuid "69b33ad4-f5e3-487a-ba87-a7503bf8ec9c")
 		(property "Reference" "R21"
-			(at 152.908 130.302 0)
+			(at 153.416 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11757,6 +11760,7 @@
 		)
 		(property "Value" "10k"
 			(at 153.416 132.842 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12305,7 +12309,7 @@
 		(dnp no)
 		(uuid "7bcdbcb3-1c53-4e92-b8ee-de22addedac7")
 		(property "Reference" "R17"
-			(at 68.326 131.572 0)
+			(at 69.088 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12317,6 +12321,7 @@
 		)
 		(property "Value" "10k"
 			(at 69.596 134.112 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12887,10 +12892,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "87c91793-063c-427f-bd6f-1b013877ed16")
 		(property "Reference" "R6"
-			(at 29.21 88.9 90)
+			(at 29.21 92.456 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12899,8 +12903,9 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 29.21 91.44 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12969,7 +12974,7 @@
 		(dnp no)
 		(uuid "87f993d1-8d8e-4bd5-b6fe-ebdc823b05c1")
 		(property "Reference" "R13"
-			(at 152.654 97.282 0)
+			(at 153.162 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12981,6 +12986,7 @@
 		)
 		(property "Value" "10k"
 			(at 153.416 99.822 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13779,10 +13785,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9d01eb3c-4429-4828-af4a-4e63d22cadb5")
 		(property "Reference" "R20"
-			(at 154.94 120.65 90)
+			(at 154.94 124.206 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13791,8 +13796,9 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 154.94 123.19 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13937,10 +13943,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a2a6446f-f18e-4c5e-8c10-8f2eacde5882")
 		(property "Reference" "R12"
-			(at 154.94 87.63 90)
+			(at 154.94 90.678 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13949,8 +13954,9 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 154.94 90.17 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14334,7 +14340,7 @@
 		(dnp no)
 		(uuid "a7f88547-8de0-4011-890e-e74669e1d8ea")
 		(property "Reference" "R15"
-			(at 26.924 131.572 0)
+			(at 27.432 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14346,6 +14352,7 @@
 		)
 		(property "Value" "10k"
 			(at 27.686 134.112 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14493,7 +14500,7 @@
 		(dnp no)
 		(uuid "ab218aaa-ccac-4882-a060-205b263fcb40")
 		(property "Reference" "R9"
-			(at 69.596 98.552 0)
+			(at 70.358 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14505,6 +14512,7 @@
 		)
 		(property "Value" "10k"
 			(at 69.596 101.092 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14738,10 +14746,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b073599d-5847-4ec0-9a25-95fb55fe9c61")
 		(property "Reference" "R14"
-			(at 29.21 121.92 90)
+			(at 29.21 125.222 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14750,8 +14757,9 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 29.21 124.46 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15147,7 +15155,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "SS34"
 			(at 38.4175 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15180,6 +15188,17 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 38.1 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C8678"
 			(at 38.1 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -15462,10 +15481,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c2e12d23-d30f-4090-b1d3-e19d6cb6c2e7")
 		(property "Reference" "R16"
-			(at 71.12 121.92 90)
+			(at 71.12 125.222 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15474,8 +15492,9 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 71.12 124.46 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17000,7 +17019,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "da0de0e7-56bf-4518-bf6c-72839ef6f369")
 		(property "Reference" "U1"
 			(at 175.514 20.574 0)
@@ -17941,6 +17960,17 @@
 		)
 		(property "Description" "40V 1A Schottky Diode, SMA"
 			(at 40.64 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1508"
+			(at 40.64 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
