@@ -68,3 +68,14 @@ tools/fab.sh tray-board
 runs ERC + DRC (fails on any error/warning) and writes trimmed gerbers, Excellon
 drill + map, SMD-only pick-and-place, BOM, and a gerber zip to
 `tray-board/production/` (git-ignored — regenerated from source).
+
+It also runs `tools/check_pins.py`, which checks the MCU's pin usage for
+hardware hazards ERC doesn't catch — currently ESP32 strapping pins (GPIO0,
+2, 5, 12, 15) with an external pull that conflicts with their required
+boot-time level, GPIO6-11 (internal flash, must never be used externally),
+and UART0 (GPIO1/3, reserved for USB-serial). Fails the build on any
+ERROR-severity finding; can also be run standalone:
+
+```
+tools/check_pins.py path/to/board.kicad_sch
+```

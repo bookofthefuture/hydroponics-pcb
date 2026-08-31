@@ -43,3 +43,7 @@ production/
 .DS_Store
 Thumbs.db
 *.swp
+
+# --- Python (tools/) ---
+__pycache__/
+*.pyc

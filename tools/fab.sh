@@ -27,6 +27,9 @@ echo "==> ERC"
 kicad-cli sch erc --exit-code-violations --severity-error --severity-warning \
   "$sch" -o "$out/${name}-erc.rpt"
 
+echo "==> Pin usage / strapping-pin check"
+python3 "$repo_root/tools/check_pins.py" "$sch"
+
 echo "==> DRC"
 kicad-cli pcb drc --exit-code-violations --severity-error --severity-warning \
   "$pcb" -o "$out/${name}-drc.rpt"
