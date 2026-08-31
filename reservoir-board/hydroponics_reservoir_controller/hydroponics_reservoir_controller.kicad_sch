@@ -8617,7 +8617,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 113.03 95.25 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 113.03 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8697,7 +8708,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 113.03 128.27 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 113.03 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8858,7 +8880,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474892"
+				(at 137.16 190.5 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 137.16 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -8939,7 +8972,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C93194"
+				(at 74.93 39.37 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 74.93 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -9250,7 +9294,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 71.12 95.25 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 71.12 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9332,7 +9387,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 116.84 99.06 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 116.84 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9415,7 +9481,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474892"
+				(at 137.16 177.8 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 137.16 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -9497,7 +9574,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 82.55 55.88 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 82.55 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9580,7 +9668,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474892"
+				(at 137.16 158.75 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 137.16 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -9740,7 +9839,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17673"
+				(at 31.75 167.64 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 31.75 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -9900,7 +10010,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17673"
+				(at 222.25 95.25 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 222.25 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9984,7 +10105,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+					(property "LCSC" "C20917"
+				(at 43.18 132.08 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 43.18 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -10068,7 +10200,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C207091"
+				(at 30.48 40.64 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 30.48 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -10150,7 +10293,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C83055"
+				(at 218.44 52.07 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 218.44 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -10234,7 +10388,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+					(property "LCSC" "C20917"
+				(at 85.09 99.06 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 85.09 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -10322,7 +10487,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+					(property "LCSC" "C20917"
+				(at 43.18 99.06 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 43.18 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -10408,7 +10584,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17513"
+				(at 247.65 152.4 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 247.65 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -10489,7 +10676,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C2443257"
+				(at 97.79 43.18 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 97.79 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -11037,7 +11235,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17407"
+				(at 48.26 44.45 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 48.26 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -11119,7 +11328,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 116.84 132.08 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 116.84 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -11279,7 +11499,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17673"
+				(at 231.14 95.25 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 231.14 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -11361,7 +11592,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C84260"
+				(at 97.79 24.13 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 97.79 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -11454,7 +11696,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 33.02 99.06 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 33.02 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -11535,7 +11788,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17604"
+				(at 83.82 170.18 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 83.82 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -11617,7 +11881,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17437"
+				(at 226.06 34.29 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 226.06 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -11699,7 +11974,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C83055"
+				(at 222.25 152.4 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 222.25 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -11781,7 +12067,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 158.75 130.81 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 158.75 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -11864,7 +12161,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474892"
+				(at 137.16 165.1 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 137.16 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -11945,7 +12253,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 247.65 144.78 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 247.65 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -12103,7 +12422,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 213.36 144.78 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 213.36 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -12182,7 +12512,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17513"
+				(at 91.44 166.37 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 91.44 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -12342,7 +12683,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 74.93 132.08 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 74.93 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -12501,7 +12853,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17513"
+				(at 97.79 33.02 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 97.79 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -12584,7 +12947,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474893"
+				(at 165.1 170.18 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 165.1 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -12669,7 +13043,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C105213"
+				(at 91.44 54.61 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 91.44 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -12753,7 +13138,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+					(property "LCSC" "C20917"
+				(at 127 132.08 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 127 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -12841,7 +13237,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+					(property "LCSC" "C20917"
+				(at 127 99.06 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 127 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12925,7 +13332,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 29.21 95.25 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 29.21 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -13007,7 +13425,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 158.75 97.79 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 158.75 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -13089,7 +13518,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17513"
+				(at 213.36 152.4 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 213.36 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13168,7 +13608,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C2047389"
+				(at 78.74 43.18 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 78.74 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13249,7 +13700,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C144397"
+				(at 209.55 105.41 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 209.55 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -13343,7 +13805,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17819"
+				(at 82.55 48.26 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 82.55 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -13735,7 +14208,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C144394"
+				(at 45.72 179.07 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 45.72 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -13818,7 +14302,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 154.94 127 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 154.94 127 0)
 			(hide yes)
 			(show_name no)
@@ -13976,7 +14471,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 154.94 93.98 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 154.94 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -14213,7 +14719,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+					(property "LCSC" "C1508"
+				(at 166.37 85.09 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 			(at 166.37 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -14373,7 +14890,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 33.02 132.08 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 33.02 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -14533,7 +15061,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17414"
+				(at 74.93 99.06 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 74.93 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14617,7 +15156,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+					(property "LCSC" "C20917"
+				(at 168.91 97.79 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 168.91 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -14779,7 +15329,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 29.21 128.27 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 29.21 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14862,7 +15423,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474893"
+				(at 165.1 161.29 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 165.1 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -15422,7 +15994,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54302.pdf"
+					(property "LCSC" "C311983"
+				(at 53.34 34.29 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54302.pdf"
 			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -15514,7 +16097,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 71.12 128.27 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 71.12 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -15595,7 +16189,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C24518"
+				(at 121.92 44.45 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 121.92 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -15653,7 +16258,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 Ohm"
 			(at 91.44 161.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15674,7 +16279,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C17408"
+				(at 91.44 163.83 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 91.44 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -15912,7 +16528,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474892"
+				(at 137.16 184.15 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 137.16 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -15995,7 +16622,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474892"
+				(at 137.16 171.45 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 137.16 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -16311,7 +16949,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+					(property "LCSC" "C1508"
+				(at 124.46 119.38 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 			(at 124.46 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -16391,7 +17040,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+					(property "LCSC" "C6186"
+				(at 113.03 49.53 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
 			(at 113.03 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -16476,7 +17136,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+					(property "LCSC" "C1508"
+				(at 166.37 118.11 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 			(at 166.37 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -16558,7 +17229,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+					(property "LCSC" "C1508"
+				(at 124.46 86.36 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 			(at 124.46 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -16641,7 +17323,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C144395"
+				(at 166.37 182.88 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 166.37 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -16807,7 +17500,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C83055"
+				(at 256.54 152.4 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 256.54 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -16969,7 +17673,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+					(property "LCSC" "C20917"
+				(at 85.09 132.08 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 85.09 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -17216,7 +17931,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C36717"
+				(at 217.17 25.4 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 217.17 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -17375,7 +18101,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C970685"
+				(at 48.26 36.83 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 48.26 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -17459,7 +18196,18 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+					(property "LCSC" "C20917"
+				(at 168.91 130.81 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 168.91 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -17545,7 +18293,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+					(property "LCSC" "C1508"
+				(at 82.55 119.38 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 			(at 82.55 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -17627,7 +18386,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+					(property "LCSC" "C1508"
+				(at 40.64 119.38 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 			(at 40.64 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -17865,7 +18635,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C105213"
+				(at 97.79 54.61 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 97.79 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18040,7 +18821,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C144395"
+				(at 100.33 163.83 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 100.33 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -18128,7 +18920,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+					(property "LCSC" "C1508"
+				(at 82.55 86.36 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
 			(at 82.55 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -18518,7 +19321,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+					(property "LCSC" "C474881"
+				(at 21.59 40.64 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" ""
 			(at 21.59 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -18680,7 +19494,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.icbase.com/pdf/SPX/SPX00480106.pdf"
+					(property "LCSC" "C8963"
+				(at 247.65 48.26 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+(property "Datasheet" "http://www.icbase.com/pdf/SPX/SPX00480106.pdf"
 			(at 247.65 48.26 0)
 			(hide yes)
 			(show_name no)
