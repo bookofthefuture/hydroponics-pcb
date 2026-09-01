@@ -9,6 +9,12 @@
 
 set -euo pipefail
 
+# KiCad 10.x CLI. Override with KICAD_CLI when the system kicad-cli is too old,
+# e.g. under WSL:
+#   KICAD_CLI="/mnt/c/Program Files/KiCad/10.0/bin/kicad-cli.exe" tools/fab.sh tray-board
+# (multi-file projects must live under /mnt/c/... for the Windows binary to load them).
+kc="${KICAD_CLI:-kicad-cli}"
+
 board_dir="${1:?usage: tools/fab.sh <board-dir>}"
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 board_dir="$repo_root/$board_dir"
@@ -24,35 +30,41 @@ rm -rf "$out"
 mkdir -p "$out/gerbers"
 
 echo "==> ERC"
-kicad-cli sch erc --exit-code-violations --severity-error \
+"$kc" sch erc --exit-code-violations --severity-error \
   "$sch" -o "$out/${name}-erc.rpt"
 
 echo "==> Pin usage / strapping-pin check"
 python3 "$repo_root/tools/check_pins.py" "$sch"
 
 echo "==> DRC"
-kicad-cli pcb drc --exit-code-violations --severity-error --severity-warning \
-  "$pcb" -o "$out/${name}-drc.rpt"
+"$kc" pcb drc --exit-code-violations --severity-error --severity-warning \
+  --refill-zones "$pcb" -o "$out/${name}-drc.rpt"
+
+echo "==> 3D model (STEP, for mechanical CAD / Fusion)"
+# No --no-dnp: socketed modules (ESP32) are marked DNP for the JLC BOM but are
+# physically fitted, so keep them in the mechanical model when they have one.
+"$kc" pcb export step --subst-models --force \
+  --output "$out/${name}.step" "$pcb"
 
 echo "==> Gerbers (fab layers only, Protel extensions for JLCPCB)"
-kicad-cli pcb export gerbers --subtract-soldermask \
+"$kc" pcb export gerbers --subtract-soldermask --check-zones \
   --layers F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts \
   --output "$out/gerbers/" "$pcb"
 
 echo "==> Drill (Excellon, separate PTH/NPTH, drill-origin)"
-kicad-cli pcb export drill --format excellon --drill-origin absolute \
+"$kc" pcb export drill --format excellon --drill-origin absolute \
   --excellon-units mm --excellon-separate-th --generate-map --map-format gerberx2 \
   --output "$out/gerbers/" "$pcb"
 
 echo "==> Pick-and-place / CPL (SMD only, DNP excluded)"
-kicad-cli pcb export pos --format csv --units mm --side both \
+"$kc" pcb export pos --format csv --units mm --side both \
   --exclude-dnp --smd-only --use-drill-file-origin \
   --output "$out/${name}-cpl-raw.csv" "$pcb"
 python3 "$repo_root/tools/format_cpl.py" "$out/${name}-cpl-raw.csv" "$out/${name}-cpl.csv"
 rm -f "$out/${name}-cpl-raw.csv"
 
 echo "==> BOM (DNP excluded, grouped so differing LCSC codes don't get merged away)"
-kicad-cli sch export bom --group-by 'Value,Footprint,LCSC' --exclude-dnp \
+"$kc" sch export bom --group-by 'Value,Footprint,LCSC' --exclude-dnp \
   --ref-range-delimiter '' \
   --fields 'Reference,Footprint,${QUANTITY},Value,LCSC' \
   --labels 'Designator,Footprint,Quantity,Value,LCSC Part #' \

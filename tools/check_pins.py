@@ -11,6 +11,7 @@ Exits non-zero if any ERROR-severity issue is found (matches the
 ERC/DRC convention used by tools/fab.sh).
 """
 
+import os
 import re
 import subprocess
 import sys
@@ -71,9 +72,10 @@ POWER_NET_GROUND = re.compile(r"^(GND|AGND|DGND)$", re.I)
 
 
 def run_netlist_export(sch_path: Path, out_path: Path) -> None:
+    kicad_cli = os.environ.get("KICAD_CLI", "kicad-cli")
     subprocess.run(
         [
-            "kicad-cli", "sch", "export", "netlist",
+            kicad_cli, "sch", "export", "netlist",
             "--format", "kicadsexpr",
             "-o", str(out_path),
             str(sch_path),
