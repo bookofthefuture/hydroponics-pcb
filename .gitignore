@@ -48,6 +48,7 @@ production/
 .DS_Store
 Thumbs.db
 *.swp
+*:Zone.Identifier
 
 # --- Python (tools/) ---
 __pycache__/
