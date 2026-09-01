@@ -3230,9 +3230,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
@@ -3240,7 +3244,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3249,8 +3253,8 @@
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3281,7 +3285,7 @@
 					)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3303,7 +3307,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3314,9 +3318,9 @@
 					)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -3324,6 +3328,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -7035,41 +7059,40 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 123.19 179.07 0)
+		(lib_id "power:GND")
+		(at 123.19 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2042fa24-8f32-41b8-8369-9e9084762eec")
-		(property "Reference" "H2"
-			(at 125.73 177.7999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 125.73 180.3399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(uuid "1532c78b-f655-4d57-8231-652603d5e63e")
+		(property "Reference" "#PWR05"
 			(at 123.19 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7080,7 +7103,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 179.07 0)
+			(at 123.19 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7090,8 +7113,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 123.19 179.07 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7100,11 +7123,171 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "03ed2784-934a-4817-8119-17d3c8cba69a")
+		)
+		(instances
+			(project "hydroponics_tray_controller"
+				(path "/aea81541-a50a-49d5-8109-ed9a0be756de"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 143.51 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2042fa24-8f32-41b8-8369-9e9084762eec")
+		(property "Reference" "H2"
+			(at 146.05 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 146.05 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 143.51 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 143.51 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32cbe91b-600a-448d-87d8-8cb1bc9e9e13")
 		)
 		(instances
 			(project "hydroponics_tray_controller"
 				(path "/aea81541-a50a-49d5-8109-ed9a0be756de"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24f964bc-ce04-4122-9632-28b95f10ce03")
+		(property "Reference" "#PWR018"
+			(at 123.19 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d961d664-cfa0-4280-bd66-c95403145ea0")
+		)
+		(instances
+			(project "hydroponics_tray_controller"
+				(path "/aea81541-a50a-49d5-8109-ed9a0be756de"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7167,6 +7350,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 248.92 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17673"
 			(at 248.92 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7259,6 +7453,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 36.83 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7040c2ae-13c0-4afb-8662-e237142954db")
 		)
@@ -7341,6 +7546,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C13585"
+			(at 46.99 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "68db25e0-3b29-4b7a-93cc-f8e4025b2a7f")
 		)
@@ -7351,6 +7567,84 @@
 			(project "hydroponics_tray_controller"
 				(path "/aea81541-a50a-49d5-8109-ed9a0be756de"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4200260e-539a-4c56-922e-b65d265ba3e6")
+		(property "Reference" "#PWR019"
+			(at 143.51 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d457df2-0c36-47b8-ad16-99248c8712de")
+		)
+		(instances
+			(project "hydroponics_tray_controller"
+				(path "/aea81541-a50a-49d5-8109-ed9a0be756de"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -7851,6 +8145,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 143.51 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "579be888-0cab-4c72-8ebf-ad26c4a95afa")
+		(property "Reference" "#PWR015"
+			(at 143.51 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eca394c9-c5f6-4230-a0ca-952c3c2060a2")
+		)
+		(instances
+			(project "hydroponics_tray_controller"
+				(path "/aea81541-a50a-49d5-8109-ed9a0be756de"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 46.99 38.1 90)
 		(mirror x)
@@ -7919,6 +8291,17 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 46.99 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2297"
+			(at 46.99 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8010,6 +8393,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17437"
+			(at 44.45 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8deb7ac9-5f34-4be8-b3f8-393692f4b4ac")
 		)
@@ -8082,6 +8476,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 58.42 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
 			(at 58.42 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -8381,6 +8786,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17513"
+			(at 46.99 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ed64adc8-ebe3-4b3a-ba84-ea0abf786e15")
 		)
@@ -8615,6 +9031,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 198.12 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17673"
 			(at 198.12 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -8941,6 +9368,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 101.6 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2e097383-7c9c-4c6d-b88e-78724e923f18")
 		)
@@ -8957,8 +9395,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 123.19 173.99 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 123.19 170.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8969,7 +9407,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7a6444b-1337-417e-8107-cba884801b96")
 		(property "Reference" "H1"
-			(at 125.73 172.7199 0)
+			(at 125.73 167.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8980,7 +9418,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 125.73 175.2599 0)
+			(at 125.73 170.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8990,8 +9428,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 123.19 173.99 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 123.19 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9002,7 +9440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 173.99 0)
+			(at 123.19 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9012,8 +9450,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 123.19 173.99 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 123.19 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9022,6 +9460,9 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "4f0a75b3-1457-40b1-9d0d-ed6bfaa4b771")
 		)
 		(instances
 			(project "hydroponics_tray_controller"
@@ -9189,7 +9630,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 123.19 184.15 0)
 		(unit 1)
 		(body_style 1)
@@ -9201,7 +9642,7 @@
 		(fields_autoplaced yes)
 		(uuid "bff5aa46-f748-4414-aeb3-001603775154")
 		(property "Reference" "H3"
-			(at 125.73 182.8799 0)
+			(at 125.73 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9212,7 +9653,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 125.73 185.4199 0)
+			(at 125.73 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9222,7 +9663,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 123.19 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -9244,7 +9685,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 123.19 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -9254,6 +9695,9 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "a3dc8e2c-06de-46c9-9a1f-ea6d48738be5")
 		)
 		(instances
 			(project "hydroponics_tray_controller"
@@ -9298,7 +9742,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 89.8652 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -9321,6 +9765,17 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 88.9 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15850"
 			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9557,6 +10012,17 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 77.47 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C6186"
 			(at 77.47 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10051,6 +10517,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17673"
+			(at 189.23 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2fa6e286-8d0c-4a0a-b1f0-40feec55e272")
 		)
@@ -10145,8 +10622,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 123.19 189.23 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 143.51 184.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10157,7 +10634,7 @@
 		(fields_autoplaced yes)
 		(uuid "f716820a-e6d7-4804-8766-83a5182f39bc")
 		(property "Reference" "H4"
-			(at 125.73 187.9599 0)
+			(at 146.05 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10168,7 +10645,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 125.73 190.4999 0)
+			(at 146.05 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10178,8 +10655,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 123.19 189.23 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10190,7 +10667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 189.23 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10200,8 +10677,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 123.19 189.23 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10210,6 +10687,9 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "568ead0c-d07f-4bed-a9b7-31a004063b0e")
 		)
 		(instances
 			(project "hydroponics_tray_controller"
@@ -10279,6 +10759,17 @@
 			)
 		)
 		(property "Description" "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8"
+			(at 66.04 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C8963"
 			(at 66.04 139.7 0)
 			(hide yes)
 			(show_name no)

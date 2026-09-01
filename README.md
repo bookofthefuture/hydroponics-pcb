@@ -7,7 +7,7 @@ IKEA growing rack.
 
 | Board | Status | MCU | Purpose |
 |-------|--------|-----|---------|
-| `tray-board` | schematic updated for touch+SD display (ERC clean), PCB layout needs re-sync (`Update PCB from Schematic`) + routing for the new footprint | socketed ESP32 30-pin DevKit | Per-tray sensor + display node. One per tray (top / bottom). |
+| `tray-board` | fab-ready: ERC/DRC/schematic-parity clean, routed with GND pours + stitching, full JLC BOM (all Basic parts) / CPL / gerbers generated | socketed ESP32 30-pin DevKit | Per-tray sensor + display node. One per tray (top / bottom). |
 | `reservoir-board` | not started | ESP32 (TBD) | Reservoir-side control: fill pumps, A/B + pH dosing pumps, level/EC/pH/temp sensing. |
 
 Grow-lamp switching currently stays on the original ESP8266 `hydroponics_monitor`
