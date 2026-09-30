@@ -21,8 +21,7 @@ node and is out of scope for these boards (may move to the reservoir board later
 | Air pressure (+ humidity/temp on BME) | BMP280 / BME280 | I²C 3.3 V | Shared SDA/SCL |
 | Lux level | BH1750 | I²C 3.3 V | Shared SDA/SCL |
 | Water temperature | DS18B20 | 1-Wire 3.3 V | Dedicated GPIO, 4.7 kΩ pull-up |
-| User input | Rotary encoder + push switch | GPIO / quadrature | 3.3 V |
-| Display | 2.4" 240×320 (ILI9341 *or* ST7789V - see below), resistive touch (XPT2046) + SD card | SPI (shared bus, separate CS lines) | LVGL, encoder-driven UI; SD card wired but not yet used by firmware |
+| Display | 2.4" 240×320 (ILI9341 *or* ST7789V - see below), resistive touch (XPT2046) + SD card | SPI (shared bus, separate CS lines) | LVGL touch UI; SD card wired but not yet used by firmware |
 
 Display connector (J2, 14-pin) pinout: VCC, GND, CS(D5), RESET(D4), DC(D2),
 MOSI(D23), SCK(D18), LED(D15), MISO(D34), T_CLK(D18, shared), T_CS(D14),
@@ -43,8 +42,8 @@ turned out to be twofold: wrong driver *and* a bad display unit, only found
 once the driver was corrected. **Don't assume the chip from the box label —
 check the panel actually responds correctly to its documented driver before
 troubleshooting anything else** (wiring, buffer size, rotation, etc.) on a
-new module from this line. See the ESPHome demo config in the `ha-config`
-repo (`esphome/hydro-tray-demo.yaml`) for the working ST7789V setup.
+new module from this line. See the live ESPHome config in the `ha-config`
+repo (`esphome/hydro-tray-ui.yaml`) for the working ST7789V setup.
 
 No high-power switching on the tray board. An SP3485EN RS-485 transceiver
 (120 Ω termination, direction pin on GPIO12) links the two tray boards to the
@@ -60,7 +59,7 @@ controlling node.
 ## Firmware
 
 ESPHome configs live in the separate `ha-config` repo under `esphome/`
-(`hydro-tray-top.yaml`, `hydro-tray-bottom.yaml`). The pin map is shared between
+(`hydro-top-tray.yaml`, `hydro-bottom-tray.yaml`). The pin map is shared between
 the schematic here and those configs — keep them in sync.
 
 ## Repo layout
