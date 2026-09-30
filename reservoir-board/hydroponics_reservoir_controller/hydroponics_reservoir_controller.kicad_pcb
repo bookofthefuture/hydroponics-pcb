@@ -7659,7 +7659,7 @@
 		(descr "JST XH series connector, B3B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf)")
 		(tags "connector JST XH vertical")
 		(property "Reference" "1Wire"
-			(at 2.5 -3.55 0)
+			(at 2.4 -6.1 0)
 			(layer "F.SilkS")
 			(uuid "a7314f90-c35b-4555-9daa-2eaff94198f2")
 			(effects
@@ -17333,7 +17333,7 @@
 		(descr "JST XH series connector, B4B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf)")
 		(tags "connector JST XH vertical")
 		(property "Reference" "Trays"
-			(at 3.75 -3.55 0)
+			(at 3.9 -6.1 0)
 			(layer "F.SilkS")
 			(uuid "846f6a8b-d924-4e9c-bcc6-4c52beff6438")
 			(effects
@@ -17961,7 +17961,7 @@
 		(descr "JST XH series connector, B4B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf)")
 		(tags "connector JST XH vertical")
 		(property "Reference" "Level Sensor"
-			(at 3.75 -3.55 0)
+			(at 4 -6.1 0)
 			(layer "F.SilkS")
 			(uuid "210cee78-93d0-4ed1-9357-bea3e84222bc")
 			(effects
@@ -20201,6 +20201,138 @@
 			"+yEbAtCtCr0gxtrI9pikAxSOlzHcTIFk96H/D3abGHVQEjcgAAAAAElFTkSuQmCC"
 		)
 		(uuid "76eb5b9d-37ba-4c94-b290-1564fcd2666a")
+	)
+	(gr_text "V"
+		(at 107.310305 56.463729 90)
+		(layer "F.SilkS")
+		(uuid "a9d716d4-8083-419e-bf04-43d50b4d6b3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "B"
+		(at 109.810305 56.463729 90)
+		(layer "F.SilkS")
+		(uuid "514619af-006c-4919-bc80-78b6b9650130")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "A"
+		(at 112.310305 56.463729 90)
+		(layer "F.SilkS")
+		(uuid "5a8bdd9b-54c2-48fa-a412-13f6ced203fb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "G"
+		(at 116.310305 56.463729 90)
+		(layer "F.SilkS")
+		(uuid "397514c9-5e72-44e2-b3e3-406736c5ed11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "V"
+		(at 122 56.5 90)
+		(layer "F.SilkS")
+		(uuid "e6a4936e-abad-4721-8e31-f5109b5969be")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "T"
+		(at 124.5 56.5 90)
+		(layer "F.SilkS")
+		(uuid "4814b8a9-5e68-4d39-9b26-f67862c1c32c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "E"
+		(at 127 56.5 90)
+		(layer "F.SilkS")
+		(uuid "2f4dca6d-7844-4b0a-822d-b842d842a460")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "G"
+		(at 131 56.5 90)
+		(layer "F.SilkS")
+		(uuid "9d9d2632-7010-4edf-b7ca-a2caae6c82bf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "V"
+		(at 155.5 56.35 90)
+		(layer "F.SilkS")
+		(uuid "45170a46-27c1-4c7e-a4aa-2d4e225ba2bf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "G"
+		(at 158.5 56.5 90)
+		(layer "F.SilkS")
+		(uuid "2c9786e6-11d7-4856-9165-be605d047be3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D"
+		(at 161 56.5 90)
+		(layer "F.SilkS")
+		(uuid "4be668e3-8ebb-4fb6-b456-f204441e2c02")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
 	)
 	(segment
 		(start 173.601653 72.198347)
