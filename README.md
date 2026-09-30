@@ -21,8 +21,7 @@ node and is out of scope for these boards (may move to the reservoir board later
 | Air pressure (+ humidity/temp on BME) | BMP280 / BME280 | I²C 3.3 V | Shared SDA/SCL |
 | Lux level | BH1750 | I²C 3.3 V | Shared SDA/SCL |
 | Water temperature | DS18B20 | 1-Wire 3.3 V | Dedicated GPIO, 4.7 kΩ pull-up |
-| User input | Rotary encoder + push switch | GPIO / quadrature | 3.3 V |
-| Display | 2.4" ILI9341 240×320, resistive touch (XPT2046) + SD card | SPI (shared bus, separate CS lines) | LVGL, encoder-driven UI; SD card wired but not yet used by firmware |
+| Display | 2.4" 240×320 (ILI9341 *or* ST7789V - see below), resistive touch (XPT2046) + SD card | SPI (shared bus, separate CS lines) | LVGL touch UI; SD card wired but not yet used by firmware |
 
 Display connector (J2, 14-pin) pinout: VCC, GND, CS(D5), RESET(D4), DC(D2),
 MOSI(D23), SCK(D18), LED(D15), MISO(D34), T_CLK(D18, shared), T_CS(D14),
@@ -31,6 +30,20 @@ T_DIN(D23, shared), T_DO(D34, shared), T_IRQ(D35). SD card connector (J3,
 SCK(D18, shared). New GPIOs used: 14, 19, 34, 35 — none of these were
 previously assigned, so add them to the ESPHome configs without touching the
 existing pin numbers.
+
+**Display controller chip varies by batch**: the module is sold as
+"LCD Wiki MSP2401/MSP2402", mechanically confirmed to match the footprint
+here (see `docs/TODO.md`), but LCDWiki has shipped different driver silicon
+under that same model number. The tray-board bench-test unit (2026-09-14)
+turned out to be ST7789V, not the documented ILI9341 — sending
+ILI9341-specific init commands (extended power/gamma registers) to it left
+the panel half-configured (visible as vertical RGB banding), and the bug
+turned out to be twofold: wrong driver *and* a bad display unit, only found
+once the driver was corrected. **Don't assume the chip from the box label —
+check the panel actually responds correctly to its documented driver before
+troubleshooting anything else** (wiring, buffer size, rotation, etc.) on a
+new module from this line. See the live ESPHome config in the `ha-config`
+repo (`esphome/hydro-tray-ui.yaml`) for the working ST7789V setup.
 
 No high-power switching on the tray board. An SP3485EN RS-485 transceiver
 (120 Ω termination, direction pin on GPIO12) links the two tray boards to the
@@ -46,7 +59,7 @@ controlling node.
 ## Firmware
 
 ESPHome configs live in the separate `ha-config` repo under `esphome/`
-(`hydro-tray-top.yaml`, `hydro-tray-bottom.yaml`). The pin map is shared between
+(`hydro-top-tray.yaml`, `hydro-bottom-tray.yaml`). The pin map is shared between
 the schematic here and those configs — keep them in sync.
 
 ## Repo layout

@@ -33,6 +33,14 @@ drawing for the LCD Wiki MSP2401/MSP2402 2.4" ILI9341+XPT2046 module.
 Confirmed against the physical board (2026-08-31) — this is the correct
 footprint, not just a probable match.
 
+**Update 2026-09-14**: the footprint/pinout above still holds, but the
+driver chip does not always match the "ILI9341" on the box — the
+tray-board bench-test unit turned out to be an ST7789V. LCDWiki has
+shipped different controller silicon under the same MSP2401/MSP2402
+model number. Check the actual chip empirically (try both drivers) before
+assuming ILI9341 on a new unit from this line — see the note in the main
+README's "Tray board peripherals" section.
+
 Dimensioned numbers from this drawing, all confirmed against physical
 measurement:
 - PCB outline: 42.72 x 77.18mm
